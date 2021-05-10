@@ -28,6 +28,7 @@ module.exports = function(app, NAMESPACE, crypto) {
                 crypto.scrypt(password, salt, 64,(err, key) => {
                     if(key == tkey) {
                         u.password = tkey;
+                        console.log(u);
                         req.session.user = u;
                         res.redirect('/');
                     }else {
