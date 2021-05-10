@@ -1,7 +1,7 @@
 var uuid = require('uuid').v5;
 var fs = require('fs');
 var NAMESPACE = '99ded2a5-1c51-488e-9654-1339fc3d4a82';
-var URI = 'mongodb+srv://sasanqua:sasanqua@cluster0.aczsb.azure.mongodb.net/asm';
+var URI = 'mongodb+srv://dinhthimailinh:dinhthimailinh@cluster0.yanfs.mongodb.net/webheroku?retryWrites=true&w=majority'; // cai nay nho doi lai thanh cai URI mongodb cua chi
 var connect = require('mongoose').connect;
 connect(URI, {useNewUrlParser: true});
 
