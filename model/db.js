@@ -7,6 +7,7 @@ connect(URI, {useNewUrlParser: true});
 
 const Product = require('./db-models').Product;
 
+/*
 fs.readdir(__dirname + '/np', update_products);
 function update_products(err, dirs) {
     dirs.forEach(dir => {
@@ -39,5 +40,5 @@ function update_products(err, dirs) {
        fs.rmdir(dir_path, {recursive: true}, err => {});
     });
 }
-
+*/
 module.exports.NAMESPACE = NAMESPACE;
